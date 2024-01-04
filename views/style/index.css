@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(45deg, #001a34, #000000);
+    background: linear-gradient(45deg, #2f373d, #000000);
     font-family: "Open Sans", sans-serif;
 }
 
@@ -37,17 +37,17 @@ img {
     width: 80px;
     border-radius: 50%;
     padding: 12px;
-    box-shadow: 0 2px 6px #001a348a;
+    box-shadow: 0 2px 6px #4b4b4c8a;
     cursor: pointer;
 }
 
 img:hover{
-    background-color: rgb(7, 65, 123);
+    background-color: #2f373d;
     transition: 1s ease-in-out;
 }
 
 .login-header {
-    background: rgb(0, 55, 109);
+    background: #2f373d;
     padding: 20px;
     font-size: 1.4em;
     font-weight: normal;
@@ -58,7 +58,7 @@ img:hover{
 }
 
 .login-container {
-    background: rgb(0, 55, 109);
+    background: #2f373d;
     padding: 40px 30px;
     transition: 1s;
 }
@@ -128,4 +128,10 @@ img:hover{
     border-radius: 50%;
 }
 
+.btn{
+    background-color: #3e4548;
+    border-radius: 50px;
+    border: none !important;
+    color: white;
+}
 
