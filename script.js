@@ -3,31 +3,22 @@ const express = require("express");
 const app = express();
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true}));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static("views"));
 
-
-const emailDB = "superuser@gmail.com"
+const emailDB = "superuser@gmail.com";
 const passwordDB = "123";
 
-
-
 app.post("/login", (req, res) => {
+  const { email, password } = req.body;
 
-    const { email, password } = req.body;
-
-    if(email === emailDB && password === passwordDB){
-        res.send("Login Successful");
-    }else{
-        res.send("login faild");
-    }
-
+  if (email === emailDB && password === passwordDB) {
+    res.send("Login Successful");
+  } else {
+    res.send("login faild");
+  }
 });
 
-
-
-
 const PORT = process.env.PORT || 3001;
-
 
 app.listen(PORT);
